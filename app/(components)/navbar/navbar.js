@@ -5,7 +5,8 @@ export default function Navbar() {
   return (
     <div>
        <nav>
-            <Link href="/" className="logo">Xplore<FaStaylinked/>kill
+       <Link href="/" className="logo">Xplore
+                <i className="fab fa-staylinked"></i>kill
             </Link>
             <div className="nav-links" id="navLinks">
                 <i className="fa fa-times" onclick="hideMenu()"></i>
