@@ -2,6 +2,11 @@ import Image from "next/image";
 import Navbar from "./(components)/navbar/navbar";
 import HeadingAndText from "./(components)/headingAndText/headingAndText";
 import TextCard from "./(components)/textCard/textCard";
+import ImageCard from "./(components)/imageCard/imageCard";
+import campus1 from "../public/images/Campus1.png"
+import campus2 from "/public/images/Campus2.png"
+import campus3 from "/public/images/Campus3.png"
+import FacilitiesCard from "./(components)/facilitiesCard/facilitiesCard";
 export default function Home() {
   return (
     <div>
@@ -20,19 +25,29 @@ export default function Home() {
       <section className="course">
         <HeadingAndText headingBeforeBreak="EXPLORE OUR 60+" headingAfterBreak=" MAJOR PROGRAMS" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit" />
         <div className="row">
-          <TextCard heading="Graduate Programs" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-                    soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-                    laborum velit non."/>
-          <TextCard heading="Undergraduate Programs" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-                    soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-                    laborum velit non."/>
-          <TextCard heading="Adult Learning & Degree Completion" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-                    soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-                    laborum velit non."/>
+          <TextCard heading="Graduate Programs" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum laborum velit non."/>
+          <TextCard heading="Undergraduate Programs" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum laborum velit non."/>
+          <TextCard heading="Adult Learning & Degree Completion" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum laborum velit non."/>
         </div>
       </section>
       <section className="campus">
           <HeadingAndText headingBeforeBreak="TAKE OUR VIRTUAL TOUR" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit"/>
+          <div className="row">
+            <ImageCard ImagePath={campus1} text="DEHLI"/>
+            <ImageCard ImagePath={campus2} text="HYDERABAD"/>
+            <ImageCard ImagePath={campus3} text="MUMBAI"/>
+          </div>
+      </section>
+      <section className="facilities">
+         <HeadingAndText headingBeforeBreak="Our Facilities" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit."/>
+         <div className="row">
+             <FacilitiesCard source="/images/libary.png" heading="Best Library" paragragh="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam."/>
+             <FacilitiesCard source="/images/playground.png" heading="Athletics" paragragh="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam."/>
+             <FacilitiesCard source="/images/food.png" heading="Tasty and Healthy Food" paragragh="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam."/>
+         </div>
+      </section>
+      <section class="testimonials">
+        <HeadingAndText headingBeforeBreak="What our Student says" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "/>
       </section>
     </div>
   );
