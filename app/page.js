@@ -9,6 +9,7 @@ import campus3 from "/public/images/Campus3.png"
 import FacilitiesCard from "./(components)/facilitiesCard/facilitiesCard";
 import Testimonial from "./(components)/testimonial/testimonial";
 import Link from "next/link";
+import Button from "./(components)/button/button";
 export default function Home() {
   return (
     <div>
@@ -21,7 +22,7 @@ export default function Home() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
             <br /> esse blanditiis in quae perspiciatis quo.
           </p>
-          <a href="#" className="hero_btn">Visit Us To Know More</a>
+          <Button textButton="Visit us to know more" classname="hero_btn"/>
         </div>
       </section>
       <section className="course">
@@ -57,7 +58,7 @@ export default function Home() {
       </section>
       <section class="cta">
         <h1>GET READY FOR A BRIGHT FUTURE</h1>
-        <Link href="/Contact" className="hero_btn">CONTACT US</Link>
+        <Button textButton="CONTACT US" classname="hero_btn"/>
     </section>
     </div>
   );
